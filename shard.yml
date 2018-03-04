@@ -1,0 +1,13 @@
+name: Tala
+version: 0.0.1
+
+authors:
+  - atn-the-long-beard <arn.menant@gmail.com>
+
+crystal: 0.24.1
+
+license: Apache 2
+
+dependencies:
+  router:
+    github: tbrand/router.cr
