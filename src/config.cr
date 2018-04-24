@@ -1,7 +1,7 @@
 # Application dependencies
 require "action-controller"
 require "active-model"
-
+SECRET="DSdsaeqkep.iw.jopqwe793742mhds9823m91d6s313k20831023k10238l01"
 # Application code
 require "./controllers/application"
 require "./actions/*"

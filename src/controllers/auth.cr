@@ -7,16 +7,17 @@ class Auth < Application
     post "/login", :user do
       # e.g. render a list of features detected on the photo
 
-    json = JSON.build do |json|
-    json.object do
-      json.field "username", params["username"]
-      json.field "password" ,params["password"]
+      json = JSON.build do |json|
+      json.object do
+        json.field "username", params["username"]
+        json.field "password" ,params["password"]
       end
-    end
-
-
-    render json: auth(json)
-
+      end
+       
+        response.headers["Access-Control-Allow-Origin"]="http://localhost:3000"
+        respond_with do 
+        render json: auth(json)
+        end
     #   auth(ReqData.from_json(request.body.not_nil!))
     end
   

@@ -20,7 +20,8 @@ dependencies:
   # Generic template interface for Crystal
   kilt:
     github: jeromegn/kilt
-
+  jwt:
+    github: crystal-community/jwt
 # compile target
 targets:
   app:
