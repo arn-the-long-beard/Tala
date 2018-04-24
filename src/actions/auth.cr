@@ -7,6 +7,11 @@ def auth(credentials : String)
     response.body.lines # => "<!doctype html>"  
         puts  response.status_code  
         puts response.cookies.to_h
-    return response.cookies["sid"].value    
+
+    
+
+    return response.body.lines 
 end
+  
+
   
